@@ -1,19 +1,22 @@
+import Image from "next/image"
 import Maxwidth from "./Maxwidth"
+import car from "../public/car.svg"
+import Link from "next/link"
 
 
 const Navbar = () => {
   return (
     <div className="top-2 h-16 sticky backdrop-blur-xl z-[100] ">
         <Maxwidth className=" relative">
-            <div className="border-b-2 h-16 top-2 bg-gradient-to-t from-red-400 to-red-600 flex items-center justify-between px-3 text-slate-200 font-semibold">
-                <div className="flex items-center justify-between hover:text-white gap-1">
-                    <img className="h-8" src="/car.svg" alt="" />
-                    <a href="/">Home</a>
+            <div className="border-b-2 h-16 top-2  flex items-center justify-between px-3 font-semibold">
+                <div className="flex items-center justify-between gap-3">
+                    <Image src={car} alt="car" height={40} width={40}/>
+                    <Link href="/" className="text-xl font-bold">Car Rental</Link>
                 </div>
                 <div className="flex items-center justify-center gap-5 ">
-                    <a className="hover:text-white" href="/configure/about">About</a>
-                    <a className="hover:text-white"href="/configure/services">Services</a>
-                    <a className="hover:text-white"href="/configure/contuct">contuct us</a>
+                    <Link className="" href="/configure/about">About</Link>
+                    <Link className=""href="/configure/services">Services</Link>
+                    <Link className=""href="/configure/contuct">contuct us</Link>
                 </div>
             </div>
         </Maxwidth>
