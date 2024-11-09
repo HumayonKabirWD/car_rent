@@ -4,7 +4,6 @@ import { usePathname } from 'next/navigation';
 import { cn } from "@/lib/utils";
 import {
   Car,
-  Search,
   Calendar,
   MapPin,
   Info,
