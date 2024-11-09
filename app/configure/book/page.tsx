@@ -25,8 +25,8 @@ export default function page() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center ">
-    <form onSubmit={handleSubmit} className="w-fit lg:w-[720px] mx-auto p-6 bg-gray-100 rounded-lg shadow-md top-20 lg:ml-80 lg:mr-10 m-5 absolute">
+    <div className=" flex justify-center ">
+    <div onSubmit={handleSubmit} className="w-fit lg:w-[720px] mx-auto p-6 bg-gray-100 rounded-lg shadow-md top-20 lg:ml-80 lg:mr-10 m-5 absolute pb-20">
       <h2 className="text-2xl font-bold mb-4">Car Rental Booking</h2>
       
       
@@ -118,7 +118,7 @@ export default function page() {
       <button type="submit" className="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">
         Book Now
       </button>
-    </form>
+    </div>
     </div>
   );
 }

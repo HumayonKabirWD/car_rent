@@ -15,7 +15,7 @@ import icon9 from '../public/toyota-svgrepo-com.svg';
 const Scroll = () => {
 
   return (
-    <div className="w-full p-8 mb-20 lg:mb-4  mx-auto pr-5">
+    <div className="w-full mb-20 lg:mb-4  mx-auto">
       {/* Outer container with hidden overflow */}
       <div className="w-full overflow-hidden relative">
         {/* Scrolling container with animation */}

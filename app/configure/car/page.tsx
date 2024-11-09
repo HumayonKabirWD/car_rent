@@ -14,22 +14,22 @@ const page = () => {
     imageUrl?: string;
     imageBlur?: string;
   }>>([
-    { name: 'Toyota Camry', price: '$25,995' },
-    { name: 'Honda Civic', price: '$22,550' },
-    { name: 'Ford Mustang', price: '$27,470' },
-    { name: 'Tesla Model 3', price: '$38,990' },
-    { name: 'BMW 3 Series', price: '$43,300' },
-    { name: 'Mercedes C-Class', price: '$44,600' },
+    { name: 'Toyota Camry', price: '$25' },
+    { name: 'Honda Civic', price: '$22' },
+    { name: 'Ford Mustang', price: '$27' },
+    { name: 'Tesla Model 3', price: '$38' },
+    { name: 'BMW 3 Series', price: '$43' },
+    { name: 'Mercedes C-Class', price: '$44' },
     { name: 'Audi A4', price: '$39,100' },
-    { name: 'Hyundai Sonata', price: '$24,950' },
-    { name: 'Nissan Altima', price: '$24,900' },
-    { name: 'Lexus ES', price: '$41,875' },
-    { name: 'Volkswagen Passat', price: '$27,295' },
-    { name: 'Chevrolet Malibu', price: '$23,400' },
-    { name: 'Kia K5', price: '$24,590' },
-    { name: 'Mazda 6', price: '$24,475' },
-    { name: 'Subaru Legacy', price: '$23,495' },
-    { name: 'Acura TLX', price: '$38,900' }
+    { name: 'Hyundai Sonata', price: '$24' },
+    { name: 'Nissan Altima', price: '$24' },
+    { name: 'Lexus ES', price: '$41'},
+    { name: 'Volkswagen Passat', price: '$27' },
+    { name: 'Chevrolet Malibu', price: '$23' },
+    { name: 'Kia K5', price: '$24' },
+    { name: 'Mazda 6', price: '$24'},
+    { name: 'Subaru Legacy', price: '$23'},
+    { name: 'Acura TLX', price: '$38'}
   ]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -87,7 +87,7 @@ const page = () => {
   }, []);
 
   return (
-    <div className="p-6 bg-gray-100 min-h-screen top-20 lg:ml-80 lg:mr-10 m-5 absolute  ">
+    <div className="p-6 bg-gray-100 min-h-screen top-20 lg:ml-80 lg:mr-10 m-5 absolute pb-20 ">
       <h1 className="text-3xl font-bold mb-6 text-center">Popular Cars</h1>
       {error && (
         <div className="text-red-500 text-center mb-4">

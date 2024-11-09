@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Car, Calendar, MapPin, Icon, CircleAlert } from 'lucide-react';
+import { Home, Car, Calendar, CircleAlert } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../public/logo.png';
@@ -7,13 +7,13 @@ import logo from '../public/logo.png';
 const SidebarLayout = () => {
 
   return (
-    <div className="relative min-h-screen pb-16 lg:pb-0 ">
+    <div className="relative min-h-screen pb-16 lg:pb-0 mb-10">
       <div className="h-16 w-full fixed z-10 flex items-center justify-between bg-slate-300">
         <Link href="/" className="flex items-center pl-2 lg:pl-6 gap-2">
           <Image src={logo}width={100} height={100} alt='logo'/>
           <h1 className='font-extrabold text-xl text-gray-700'>HK.Rent</h1>
         </Link>
-        <div className="flex items-center gap-3 lg:gap-7 pr-3 lg:pr-8">
+        <div className="hidden lg:flex items-center gap-3 lg:gap-7 pr-3 lg:pr-8">
           <Link className='font-bold ' href="/">Home</Link>
           <Link className='font-bold' href="/configure/car">Cars</Link>
           <Link className='font-bold' href="/configure/about">About</Link>
