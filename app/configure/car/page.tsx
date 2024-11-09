@@ -7,7 +7,7 @@ import { Loader2 } from 'lucide-react';
 
 const UNSPLASH_ACCESS_KEY = process.env.NEXT_PUBLIC_UNSPLASH_ACCESS_KEY;
 
-const page = () => {
+const Page = () => {
   const [cars, setCars] = useState<Array<{
     name: string;
     price: string;
@@ -131,4 +131,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

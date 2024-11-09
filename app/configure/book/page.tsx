@@ -2,7 +2,7 @@
 // components/CarBookingForm.js
 import { useState } from 'react';
 
-export default function page() {
+export default function Page() {
   const [formData, setFormData] = useState({
     pickUpLocation: '',
     dropOffLocation: '',
